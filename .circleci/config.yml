@@ -8,11 +8,11 @@ common: &common
 
     - python/pip-run-tests:
         name: python36
-        image: circleci/3.6
+        image: circleci/python:3.6
 
     - python/pip-run-tests:
         name: python37
-        image: circleci/3.7
+        image: circleci/python:3.7
 
     - python/coverage:
         name: coverage
